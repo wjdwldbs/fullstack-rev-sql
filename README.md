@@ -1,7 +1,7 @@
 # fullstack-rev-sql
 an app to help you review building a fullstack appliation with a sql database
 
-Before Starting
+## Before Starting
 If possible, do your best to emulate the environment in which you will be taking your technical assessment. This means:
  - Do not refer to old code
 
@@ -27,7 +27,7 @@ If possible, do your best to emulate the environment in which you will be taking
 
 
 
-Premise:
+## Premise:
 In a half baked attempt to make a full stack application that simulates the functionality of a popular online auction site, EBay, an amateur web-developer set out on GitHub to start building. Unfortunately, this developer was not a Hack Reactor grad and was not proficient in building full-stack applications. He has now come to you through LinkedIn to ask you for help with the following specifications:
 
   - Must use a SQL Database (if you are comfortable with noSQL, feel free to refactor to make it work)
@@ -70,7 +70,7 @@ Being the amazing engineer you are, you break down the provided specs into the f
 
 
 
-Last Instruction
+## Last Instruction
   - [ ] Write a set of instructions for the next developer to be able to start up and run your code. For example, do you have any scripts or seeding functions needed to be run for the application to work?
 
 Congratualations, you completed your mock exam. With the completion of this, you should now have an idea of where you lack understanding. Take about 10 mins to write a list for yourself about what you struggled with most on and what you felt most confident about. Review the areas you had the most trouble with and start building simpler full-stack applications while trying to focus on those weaker points so you can familiarize yourself with that aspect.
