@@ -37,7 +37,7 @@ Being the amazing engineer you are, you break down the provided specs into the f
 
   5. Build out your front end so that minimally, it looks like the following:
 
-  ** add gif here **
+  ![](EBid.gif)
 
     > Ensure the following functionalities:
       - on page load - make sure that 10 products render on the side, and one product renders in the product view.
