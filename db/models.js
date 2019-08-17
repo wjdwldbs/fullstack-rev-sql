@@ -14,6 +14,6 @@
       - string
 */
 
-// const Products = 
+const Products = 
 
 module.exports = Products;
