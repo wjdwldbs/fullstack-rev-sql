@@ -8,7 +8,6 @@ router
   .get(controller.get)
   .post(controller.post)
 
-// req.params
 router
   .route('/products/:_id')
   .put(controller.put)
