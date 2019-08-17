@@ -38,13 +38,10 @@ In a half baked attempt to make a full stack application that simulates the func
 
 Being the amazing engineer you are, you break down the provided specs into the following steps:
 
-  1. Build out and debug your server and database connection so that on postman requests to the proper endpoints, you will get an expected response (i.e - "Hello from GET")
-    - note: you may have to refactor some of the existing code
+  1. Build out and debug your server and database connection so that on postman requests to the proper endpoints, you will get an expected response (i.e - "Hello from GET") (note: you may have to refactor some of the existing code)
   2. In the path [/db/models.js] write a schema for Products that includes the necessary keys.
-  3. In the path [/db/seed.js] write code that will seed the database with at least 10 random products.
-    - a random product generator has been provided. You will not need to modify it.
-  4. In the path [/db/dbhelpers.js] write code to handle your database queries. 
-    - make sure they are connected to your server so that with postman, each request works the way they should.
+  3. In the path [/db/seed.js] write code that will seed the database with at least 10 random products (a random product generator has been provided. You will not need to modify it)
+  4. In the path [/db/dbhelpers.js] write code to handle your database queries (make sure they are connected to your server so that with postman, each request works the way they should)
   
   Now that your server and database is hooked up, move on to the front-end
 
@@ -52,16 +49,14 @@ Being the amazing engineer you are, you break down the provided specs into the f
 
   ![](EBid.gif)
 
-  (Do not worry if your classnames do not necessary match the stylesheet's. As previously stated, make the app functional. Only make it look better if you finish everything before your own set time-limit.)
+  (Do not worry if your classnames do not necessary match the stylesheet's. As previously stated, make the app functional. Only make it look better if you finish everything before your own set time-limit)
 
     - Ensure the following functionalities:
-
-      + [ ] on page load - make sure that 10 products render on the side, and one product renders in the product view.
-      + [ ] view product - implement a click function that allows the client to click and view the details for each product
-      + [ ] bidding - make sure a user can bid on a product so that their current bid updates it
+      - [ ] on page load - make sure that 10 products render on the side, and one product renders in the product view.
+      - [ ] view product - implement a click function that allows the client to click and view the details for each product
+      - [ ] bidding - make sure a user can bid on a product so that their current bid updates it
   
   6. Let's go a few steps further. Refactor your code to implement the following:
-  
     - [ ] search - implement a search functionality so that a product you search for is rendered into the product view (you may take creative liberties for how your search algorithm works. hint: filter?)
     - [ ] add another schema for users that holds username, password as columns (remember what you've learned, this is NOT secure)
     - [ ] using the already existing product generator as reference, write a random user generator to generate at least 3 users
