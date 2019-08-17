@@ -5,8 +5,7 @@
   "main": "./server/index.js",
   "scripts": {
     "build": "webpack -w",
-    "start": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon"
   },
   "repository": "https://github.com/atk1213/fullstack-rev-sql.git",
   "license": "MIT",
@@ -17,12 +16,9 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
-    "mysql": "^2.17.1",
-    "mysql2": "^1.6.5",
     "nodemon": "^1.18.10",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "sequelize": "^5.13.1"
+    "react-dom": "^16.8.4"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
