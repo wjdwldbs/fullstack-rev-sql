@@ -56,7 +56,8 @@ Being the amazing engineer you are, you break down the provided specs into the f
       - [ ] view product - implement a click function that allows the client to click and view the details for each product
       - [ ] bidding - make sure a user can bid on a product so that their current bid updates it
   
-  6. Let's go a few steps further. Refactor your code to implement the following:
+  6. Let's go a few steps further. Refactor your code to implement the following
+  
     - [ ] search - implement a search functionality so that a product you search for is rendered into the product view (you may take creative liberties for how your search algorithm works. hint: filter?)
     - [ ] add another schema for users that holds username, password as columns (remember what you've learned, this is NOT secure)
     - [ ] using the already existing product generator as reference, write a random user generator to generate at least 3 users
