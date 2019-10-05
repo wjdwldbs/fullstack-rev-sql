@@ -1,6 +1,6 @@
 
-const Products = require('./models.js');
-const db = require('./index.js');
+// const Products = require('./models.js');
+// const db = require('./index.js');
 
 // Fill in the definition of insertMockData so that when 
 // this file is run in the terminal with `node seed.js`, 
