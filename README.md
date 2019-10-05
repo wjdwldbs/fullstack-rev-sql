@@ -37,7 +37,8 @@ In a half baked attempt to make a full stack application that simulates the func
     - [ ] minimally, the get and update requests must work from the front-end so that we can get products rendered on our page from the back-end and bid on specific items (post and delete should still work from postman)
 
 Being the amazing engineer you are, you break down the provided specs into the following steps:
-NOTE: steps 2-5 may vary slightly depending on whether you choose to use raw MySQL or Sequelize. Write your code accordingly.
+
+(NOTE: steps 2-5 may vary slightly depending on whether you choose to use raw MySQL or Sequelize. Write your code accordingly)
 
   1. Build out and debug your server and database connection so that on postman requests to the proper endpoints, you will get an expected response (i.e - "Hello from GET") (note: you may have to refactor some of the existing code)
   2. In the path [/db/index.js] write out your database connection.
