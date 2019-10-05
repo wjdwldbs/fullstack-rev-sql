@@ -14,6 +14,8 @@
       - string
 */
 
-const Products = 
+// if you are using sequelize, uncomment and complete this portion
 
-module.exports = Products;
+// const Products = 
+
+// module.exports = Products;
