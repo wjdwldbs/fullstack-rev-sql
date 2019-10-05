@@ -37,15 +37,17 @@ In a half baked attempt to make a full stack application that simulates the func
     - [ ] minimally, the get and update requests must work from the front-end so that we can get products rendered on our page from the back-end and bid on specific items (post and delete should still work from postman)
 
 Being the amazing engineer you are, you break down the provided specs into the following steps:
+NOTE: steps 2-5 may vary slightly depending on whether you choose to use raw MySQL or Sequelize. Write your code accordingly.
 
   1. Build out and debug your server and database connection so that on postman requests to the proper endpoints, you will get an expected response (i.e - "Hello from GET") (note: you may have to refactor some of the existing code)
-  2. In the path [/db/models.js] write a schema for Products that includes the necessary keys.
-  3. In the path [/db/seed.js] write code that will seed the database with at least 10 random products (a random product generator has been provided. You will not need to modify it)
-  4. In the path [/db/dbhelpers.js] write code to handle your database queries (make sure they are connected to your server so that with postman, each request works the way they should)
+  2. In the path [/db/index.js] write out your database connection.
+  3. In the path [/db/models.js] OR [/db/schema.sql] write a schema for Products that includes the necessary keys.
+  4. In the path [/db/seed.js] write code that will seed the database with at least 10 random products (a random product generator has been provided. You will not need to modify it other than where the comment prompts you to write code)
+  5. In the path [/db/dbhelpers.js] write code to handle your database queries (make sure they are connected to your server so that with postman, each request works the way they should)
   
   Now that your server and database is hooked up, move on to the front-end
 
-  5. Build out your front end so that minimally, it behaves like the following:
+  6. Build out your front end so that minimally, it behaves like the following:
 
   ![](EBid.gif)
 
