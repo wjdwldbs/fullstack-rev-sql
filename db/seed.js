@@ -32,9 +32,16 @@ const createProducts = () => {
 }
 
 const insertMockData = function() {
-  // Complete me please
+  var products = createProducts();
+  var allQs = [];
+  for (var j = 0; j < products.length; j++){
+    var q = `INSERT INTO products (item, min_cost, curr_bid, ends_in, img) VALUES ("${products[j].item}", ${products[j].min_cost}, ${products[j].curr_bid}, ${products[j].ends_in}, "${products[j].image}");`
+    allQs.push(q);
+  }
+  return allQs;
 };
 
+module.exports = insertMockData;
 // NOTE: DO NOT invoke this function as part of your
 // server code - it is meant to only be run once so that
 // you have access to data to work with

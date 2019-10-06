@@ -3,13 +3,11 @@
 const router = require('express').Router();
 const controller = require('./controller.js');
 
-router
-  .route('/products')
+router.route('/products')
   .get(controller.get)
   .post(controller.post)
 
-router
-  .route('/products/:_id')
+router.route('/products/:_id')
   .put(controller.put)
   .delete(controller.delete)
 
