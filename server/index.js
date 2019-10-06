@@ -4,7 +4,7 @@
   const express = require('express');
   const path = require('path');
   const router = require('./router');
-  const port = 3001;
+  const port = 3002;
   const bodyParser = require('body-parser');
 
   const server = express();
@@ -16,4 +16,4 @@
   
   server.use('/api', router);
 
-  server.listen(port, () => console.log('Connected to port: 3001'));
+  server.listen(port, () => console.log('Connected to port: 3002'));

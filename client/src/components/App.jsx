@@ -9,9 +9,29 @@ export default class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-
+      products: [],
+      product: [],
+      type: ''
     }
+    
+  this.getProducts = this.getProducts.bind(this);
+  }
 
+  getProducts(){
+    axios.get('/api/products')
+    .then((results) => {
+      this.setState({
+        products: results.data,
+        product: results.data[0],
+        type: 'open'
+      })
+      console.log('Successful getProducts request', this.state.products)
+    })
+    .catch((err) => console.log(`Unsuccessful getProducts request, ${err}`))
+  }
+
+  componentDidMount(){
+    this.getProducts();
   }
 
   render(){
@@ -28,11 +48,15 @@ export default class App extends React.Component {
           </div>
         </nav>
         <div className="row main-container">
+          
+          {this.state.type === 'open' &&
           <div className="col-md-7 product-viewer-container">
-            <ProductViewer />
+            <ProductViewer product={this.state.product}/>
           </div>
+          }
+
           <div className="col-md-5 product-list-container">
-            <ProductList  />
+            <ProductList  products={this.state.products}/>
           </div>
         </div>
       </div>

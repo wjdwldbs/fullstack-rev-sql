@@ -34,8 +34,15 @@ const updateProductHelper = (product, index, callback) => {
   })
 }
 
-const deleteProductHelper = () => {
-
+const deleteProductHelper = (index, callback) => {
+  const q =`DELETE FROM products WHERE id=${index}`;
+  db.query(q, (err, results) => {
+    if(err){
+      callback(err);
+    } else {
+      callback(null);
+    }
+  })
 }
 
 module.exports = {

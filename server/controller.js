@@ -32,8 +32,14 @@ const controller = {
     })
     
   },
-  delete: (req, res) => {
-    res.status(200).send('DELETE SUCCESS!');
+  delete: ({params}, res) => {
+    helpers.deleteProductHelper(params._id, (err, results) => {
+      if (err){
+        res.status(400).send(`Data DELETE request was unsucessful, ${err}`);
+      } else {
+        res.status(200).send('Data DELETE request was successful!!');
+      }
+    })
   }
 }
 
